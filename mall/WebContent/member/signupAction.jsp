@@ -16,11 +16,16 @@
 		String memberEmail = request.getParameter("memeberEmail");
 		System.out.println(memberEmail+"이메일 확인 ");
 		
+		
 		String memberPw = request.getParameter("memeberPw");
 		System.out.println(memberPw+"비밀번호 확인 ");
 		
 		String memberName = request.getParameter("memeberName");
 		System.out.println(memberName +" 이름 확인 ");
+		
+		
+		
+		
 		
 		// 사용가능한 이메일  No or Yes
 		MemberDao memberDao = new MemberDao();
@@ -30,6 +35,12 @@
 			response.sendRedirect(request.getContextPath()+"/member/signup.jsp");
 			return;
 		}
+			
+		
+		
+		
+		
+		
 			Member paramMember =new Member();
 			paramMember.setMemberEmail (memberEmail);
 			paramMember.setMemberPw ( memberPw);

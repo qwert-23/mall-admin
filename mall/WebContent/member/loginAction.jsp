@@ -12,6 +12,7 @@
 */
 		request.setCharacterEncoding("UTF-8");
 		String memberEmail = request.getParameter("memberEmail");	
+		
 		String memberPw =request.getParameter("memberPw");
 		
 		System.out.println(memberEmail + "<-memberEmail");
