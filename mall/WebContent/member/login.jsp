@@ -24,16 +24,17 @@
 		<h1>로그인</h1>
 		<form method = "post" action= "<%=request.getContextPath() %>/member/loginAction.jsp">
 		<table class="table table-success">
-			<tr>
+				<tr>
 						<td>Email</td>
-						<td><input type = "text" name = "memberEmail"></td>	
+						<td><input type = "text" name = "memberEmail" value = "admin2@naver.com"></td>	
 	
 			</tr>			
 			<tr>
 						<td>비밀번호</td>
-						<td><input type ="password" name ="memberPw" > </td>
+						<td><input type ="password" name ="memberPw" value = "1234" > </td>
 		
 			</tr>	
+						
 						
 		
 		</table>
