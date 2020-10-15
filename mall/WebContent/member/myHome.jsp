@@ -31,8 +31,9 @@
  		*/
  	
  	
-			OrdersDao productDao = new OrdersDao();
-			ArrayList<Products> ordersList = OrdersDao.selectOrdersList();
+			OrdersDao ordersDao = new OrdersDao();
+			ArrayList<Orders> OrdersList = ordersDao.selectOrdersList();
+			
 		%>	 	
  	 	
  	 	

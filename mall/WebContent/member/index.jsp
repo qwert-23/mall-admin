@@ -30,9 +30,12 @@
 		<div class="row">
  	 <h2 class="col"><a href = "index.jsp"  >Goodee shop</a></h2>  
  	 	<form>
+ 	 
+ 	 		
  	 		<input type ="text">
- 	 		<button type= "submit">검색</button>
- 	
+ 	 	
+ 	 		<a href="/mall/comingSoon/construction.jsp" >검색</a>
+
  	 	</form>
  	 	
  	 		<br>	
@@ -72,7 +75,7 @@
 				
 				
 				
-				<li class = "navbar-item"><a class = "nav-link" href="<%=request.getContextPath() %>/member/myHome.jsp">내정보</a></li>
+				<li class = "navbar-item"><a class = "nav-link" href="/mall/comingSoon/construction.jsp">내정보</a></li>
 				<%
 					}
 				%>
@@ -89,14 +92,15 @@
 						<%
 							for (Categorys c : categoryList1) {
 						%>
-								<a href="" class="btn btn-outline-dark"><%=c.getCategoryName()%></a>
+								<a href="/mall/comingSoon/construction.jsp" class="btn btn-outline-dark"><%=c.getCategoryName()%></a>
 						<%
 							}
 						%>
 					</div>
 				</div>
 				<div class="col-sm-10">
-					<img src="<%=request.getContextPath()%>/mall/images/snow.jpg">
+					<img src="/mall/images/back.jpg"width="1000" height="450" >
+					
 				</div>
 			</div>
 		</div>
@@ -137,7 +141,7 @@
 				<%
 					for (Categorys c : categoryList1) { // 추천상품 아래 카테고리 
 				%>
-				<a href="" class="btn btn-outline-danger"><%=c.getCategoryName()%></a>
+				<a href="/mall/comingSoon/construction.jsp" class="btn btn-outline-danger"><%=c.getCategoryName()%></a>
 				<%
 					}
 				%>
